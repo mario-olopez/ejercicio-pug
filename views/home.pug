@@ -1,0 +1,24 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/style.css")
+        title Ejercicio Pug 
+        
+    body
+        include ./header.pug
+        main
+            h1 Pug 
+            section
+                h2 ¿Qué es un carlino o pug?
+                p El carlino, conocido en inglés como pug, es una raza de perro con origen histórico en China, pero con el patrocinio del Reino Unido. Se trata de un perro pequeño de tipo molosoide.
+                img(src="/img/carlino.jpg", alt="Foto de un carlino", class="img_carlino")
+            button(id="mostrarInformacion") Mostrar más información
+            div(id="informacionAdicional", style="display: none;")
+                p Una de las ventajas de tener un carlino es que no necesita mucha actividad física. En cambio, como desventaja podría señalarse que le gusta roncar, mucho y alto.
+            
+            button(id="ocultarInformacion", style="display: none;") Ocultar información
+
+        include ./footer.pug
+        script(src="/js/script.js")

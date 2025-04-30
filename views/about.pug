@@ -1,0 +1,15 @@
+doctype html
+html
+   head
+      title="Sobre nosotros"
+      link(rel="stylesheet", href="/css/style.css")
+   body
+    include ./header
+    h1 Sobre nosotros
+    p Somos un equipo de amantes de los carlinos que ha creado este espacio para compartir todo lo que necesitas saber sobre esta entrañable raza. Desde sus orígenes hasta sus cuidados diarios, nuestro objetivo es difundir información útil, curiosidades y consejos prácticos para quienes ya conviven con un pug o están pensando en hacerlo.
+    section.galeria_pugs
+        img(src="/img/pug-mib.jpg", alt="Carlino en Men in Black", class="carlino_mib")
+        img(src="/img/frank-carlino.jpg", alt="Frank fumándose un puro", class="carlino_mib")
+        img(src="/img/mib-carlino-dos.jpg", alt="Otra foto de Frank en MiB", class="carlino_mib")
+        include ./footer.pug
+    script(src="/js/script.js")

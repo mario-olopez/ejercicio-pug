@@ -1,0 +1,30 @@
+html
+   head
+      title="Contacto"
+      link(rel="stylesheet", href="/css/style.css")
+   body
+    include ./header
+    h1 Contacta con nosotros
+    p Si quieres ponerte en contacto con nosotros y formar parte de la lucha de los carlinos déjanos tus datos:
+    section.container_formulario
+        form.formulario_contacto
+            label(for="name") Nombre: 
+            input(type="text", name="name", id="name" required)
+
+            label(for="email") Correo: 
+            input(type="email", name="email", id="email" required)
+
+            label(for="number") Número de móvil
+            input(type="tel", id="number" placeholder="+34") 
+
+            label(for="message") Tu comentario:
+            textarea(name="message", id="message" required, rows="5")
+
+            button(type="submit" id="enviarFormulario") Enviar
+            button(type="reset") Reiniciar formulario
+
+            div#mensajeError(style="color: red; display: none;") Tienes que rellenar todos los campos
+        img(src="/img/pug-gif.gif", alt="Gif de un pug", class="gif_contacto")
+        script(src="/js/script.js")
+
+    include ./footer   
